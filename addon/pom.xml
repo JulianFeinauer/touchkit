@@ -74,10 +74,13 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>vaadin-snapshots</id>
-            <name>Vaadin snapshot repository</name>
-            <url>${snapshot.repository.url}</url>
+            <id>nexus-snapshots</id>
+            <url>http://192.168.169.10:8082/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://192.168.169.10:8082/nexus/content/repositories/releases</url>
+        </repository>
     </distributionManagement>
 
     <description>Provides components and features for mobile devices.</description>
